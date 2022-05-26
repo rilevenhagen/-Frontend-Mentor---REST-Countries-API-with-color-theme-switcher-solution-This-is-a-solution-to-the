@@ -2,28 +2,46 @@ import axios from 'axios';
 import { useEffect, useState, useRef } from 'react';
 //get data from api
 
+const url = `https://restcountries.com/v2/all`;
 
 function Api() {
 
 const [flag, setFlag] = useState([]);
-// const [userImput, setuserImput] = useState([]);
-// const [searchFlag, searchFlag] = useState([]);
 
+    // const fetchCountryData = async() => {
+    //     const response = await fetch(url)
+    //     const flag = await response.jason()
+    //     setFlag(flag)
+    //     console.log(flag)
+    // }
 
-const url = `https://restcountries.com/v2/all`;
-
-axios({
+const apiCall = axios({
     method: 'GET',
     url: url,
     }.then((response) =>{
-        return console.log(response);
-        // setFlag(response.data);
+        console.log(response.data);
     }).catch(function (error){
         console.log(error)
     })
 )
 
-console.log(url);
+useEffect(() =>{
+apiCall()
+}, [])
+
+return (
+    <>
+    {flag.map((country) => {
+        const { id } = country
+        return <article key={id}>Country data</article>
+    })}
+    </>
+)
+
+
+// console.log(url);
+// console.log(flag)
+
 
 }
 
