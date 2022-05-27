@@ -5,18 +5,15 @@ import './App.css';
 import Api from './component/Api';
 
 
-function App(props) {
+function App() {
 
 
   return (
     <div className="App">
       < Header />
-      <div className="App">
-        <div className='data'>
+        <div className='wrapper main-container'>
           <Api />
         </div>
-      
-      </div>
     </div>
   );
 }
