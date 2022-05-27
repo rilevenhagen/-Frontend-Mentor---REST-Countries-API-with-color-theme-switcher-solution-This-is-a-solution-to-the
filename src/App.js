@@ -2,6 +2,8 @@
 import Header from './Header';
 import './App.css';
 import Api from './component/Api';
+import Search from './component/Search';
+import DropdownMenu from './component/DropdownMenu';
 
 
 function App() {
@@ -10,10 +12,19 @@ function App() {
 
   return (
     <div className="App">
-      < Header />
-        <div className='wrapper main-container'>
-          <Api />
+      <div>
+        < Header />
+      </div> 
+      <div className='wrapper'>
+        <div className='search-drop'>
+          < Search />
+          < DropdownMenu />
         </div>
+      </div>
+      
+      <div className='wrapper main-container'>
+          <Api />
+      </div>
     </div>
   );
 }

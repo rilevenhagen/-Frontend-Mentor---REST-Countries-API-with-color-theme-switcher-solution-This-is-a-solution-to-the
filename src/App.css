@@ -127,3 +127,44 @@ flex-direction: row;
 .txtBox{
 padding: 35px;
 }
+
+/* ==========form======= */
+.form-box{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+form{
+  margin: 15 auto;
+  display: flex;
+  justify-content: left;
+  align-items: unset;
+  align-content: flex-start;
+  width: 50%;
+}
+
+input{
+  padding: 9px;
+  width: 50%;
+  text-align: initial;
+  border-radius: 5px;
+}
+
+
+.search-drop{
+display: flex;
+justify-content: space-between;
+}
+
+.drop{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: #000;
+  height: 2rem;
+  border-radius: 10px;
+  border: transparent;
+  background-color: rgb(255, 255, 255);
+  font-weight: 400;
+  padding: 4px 20px 4px 31px;
+  margin-top: 27px;
+}
