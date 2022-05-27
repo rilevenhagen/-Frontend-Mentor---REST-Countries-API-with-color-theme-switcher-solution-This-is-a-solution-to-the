@@ -16,14 +16,15 @@ useState(() => {
         console.error(error);
     });
 },[flag])
+console.log(flag)
+    // flag.map(props => {
+    //     const name = props.name
+return (
+    <div>
+        {
+            flag.map(flag => <p key={flag.name}>{flag.name} {flag.population}</p>) }
 
-//     flag.map(element => {
-//         console.log(element.name)
-// return (
-//     <h2>{element.name}fffff</h2>
-// )
-// }); 
-
-}
+    </div>
+)}
 
 export default Api

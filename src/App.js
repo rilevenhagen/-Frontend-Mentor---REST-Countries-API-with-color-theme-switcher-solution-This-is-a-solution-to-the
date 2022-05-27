@@ -14,13 +14,6 @@ function App(props) {
       <div className="App">
         <div className='data'>
           <Api />
-          {props.flag.map(element => {
-              return(
-                <div>
-                  <p>{element.name}</p>
-                </div>
-              )
-            })}
         </div>
       
       </div>
