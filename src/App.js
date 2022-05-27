@@ -1,5 +1,4 @@
-import axios from 'axios';
-import { useEffect, useState, useRef } from 'react';
+ 
 import Header from './Header';
 import './App.css';
 import Api from './component/Api';
@@ -7,6 +6,7 @@ import Api from './component/Api';
 
 function App() {
 
+// display data on the DOM
 
   return (
     <div className="App">
