@@ -54,23 +54,51 @@ html {
 h1{
     font-size: 2rem;
     margin: 0 auto;
-    color: white;
+    color: rgb(6, 6, 6);
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
-/* h2{
+h2{
      font-size: 1rem;
     margin: 0 auto;
     color: rgb(6, 6, 6);
     padding-bottom: 15px;
     padding-top: 15px;
-} */
+}
 
     
 header{
-    background-color: hsl(209, 23%, 22%);
+    background-color: white;
     height: 10vh;
     text-align: left;
 }
+
+html{
+      background-color: hsl(0, 0%, 98%);
+}
     /* ================= Some general setup ends here  ================= */
+
+  .container{
+    width: 100%;
+    height: 250px;
+    }
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p{
+    text-align: left;
+  }
+
+  .country{
+    font-style: italic;
+  }
+
+  .box{
+    max-width: 25%;
+     background-color: white;
+  }
