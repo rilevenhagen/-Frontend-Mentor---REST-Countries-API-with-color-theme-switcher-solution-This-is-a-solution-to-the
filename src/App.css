@@ -80,6 +80,28 @@ header{
 html{
       background-color: hsl(0, 0%, 98%);
 }
+
+/* =====dark mode====== */
+.header-dark{
+    background-color: hsl(209, 23%, 22%);
+}
+
+.html-dak{
+background-color: hsl(207, 26%, 17%)
+}
+
+
+  .box-dark{
+    max-width: 25%;
+     background-color: hsl(209, 23%, 22%);
+  }
+
+  .data-dark{
+width: calc(100vh - 66vh);
+background: hsl(209, 23%, 22%);
+margin: 20px auto;
+border-radius: 10px;
+  }
     /* ================= Some general setup ends here  ================= */
 
   .container{
