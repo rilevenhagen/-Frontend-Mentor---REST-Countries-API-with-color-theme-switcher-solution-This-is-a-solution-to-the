@@ -1,23 +1,31 @@
 import axios from 'axios';
 import { useEffect, useState, useRef } from 'react';
-
+import DropdownMenu from './DropdownMenu';
+// import React, { Component } from 'react'
+// import Select from 'react-select'
 
 //get data from api================
 
 
-const url = `https://restcountries.com/v2/all`;
+const apiURL = `https://restcountries.com/v2/`;
 
 function Api() {
 
 const [flag, setFlag] = useState([]);
 
 useState(() => {
-    axios.get(url).then((response) => {
+    let url = ``
+    
+        if( apiURL === null || apiURL === undefined || apiURL === ""){
+            url = `${apiURL}all`
+        } else url = `${apiURL}all`
+        axios.get(url).then((response) => {
         setFlag(response.data);
     }).catch(function (error){
         console.error(error);
     });
 },[flag])
+console.log(flag)
 
 return (
     flag.map(flag => {

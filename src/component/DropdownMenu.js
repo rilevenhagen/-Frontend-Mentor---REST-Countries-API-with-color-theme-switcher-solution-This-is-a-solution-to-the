@@ -2,7 +2,7 @@
 
 
 
-function DropdownMenu(){
+function DropdownMenu(props){
 
 return(
 
@@ -13,6 +13,7 @@ return(
     <option value="asia">Asia</option>
     <option value="europe">Europe</option>
     <option value="oceania">Oceania</option>
+     <option className='clean-filter' value="clean-filter">Clean Filter</option>
 </select>
     
 )
