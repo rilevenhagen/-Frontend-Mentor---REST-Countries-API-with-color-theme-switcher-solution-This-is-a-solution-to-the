@@ -13,28 +13,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-
 /* ================= Snippet setup ends here ================= */
-
 
 
 .App {
   text-align: center;
 }
-
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-
 
 /* ================= Some general setup ================= */
 .wrapper {
@@ -49,10 +33,15 @@ html {
   padding: 0;
   font-size: 112.5%;
   overflow-x: hidden;
-  
+  background-color: hsl(0, 0%, 98%);
 }
 
-header h1{
+header {
+  background-color: white;
+  text-align: left;
+}
+
+h1{
     font-size: 2rem;
     margin: 0 auto;
     color: rgb(6, 6, 6);
@@ -62,7 +51,7 @@ header h1{
     font-weight: 800;
 }
 
-header h2{
+h2{
     font-size: 1rem;
     margin: 0 auto;
     color: rgb(6, 6, 6);
@@ -71,32 +60,39 @@ header h2{
 
 }
 
-.light-mode{
+#dark{
+  background-color: hsl(209, 23%, 22%);
+}
+#light{
+  background-color: hsl(208, 85%, 55%);
+}
+
+/* #light{
   display: flex;
   flex-direction: row-reverse;
   margin-right: 20px;
   margin-top: -50px;
 }
 
-.dark-mode{
+#dark{
   display: flex;
   flex-direction: row-reverse;
   margin-right: 20px;
-  margin-top: -55px;
+  margin-top: -45px;
+} */
+
+i{
+  font-size: 1.5rem;
 }
 
-header{
-    background-color: white;
+/* #light header{
+    background-color: rgb(206, 79, 79);
     height: 10vh;
     text-align: left;
-}
-
-html{
-      background-color: hsl(0, 0%, 98%);
-}
+} */
 
 /* =====dark mode====== */
-#dark .header-dark{
+/* #dark header{
     background-color: hsl(209, 23%, 22%);
 }
 
@@ -115,7 +111,7 @@ width: calc(100vh - 66vh);
 background: hsl(209, 23%, 22%);
 margin: 20px auto;
 border-radius: 10px;
-  }
+  } */
     /* ================= Some general setup ends here  ================= */
 
   .container{

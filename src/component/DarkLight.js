@@ -1,27 +1,31 @@
 import { useEffect, useState, useRef } from 'react';
-import { createContext } from "react";
-import useLocalStorage from 'use-local-storage'
-
-export const ThemeContext = createContext(null);
+import useLocalStorage from 'use-local-storage';
 
 
-const DarkLight = (props) => {
+// const teste = () =>{
+//     console.log('ddrf🤪🤪🤪🤪🤪dddd')
+//     return 
+// }
 
-const [theme, setTheme] = useState('dark')
+const DarkLight = () => {
+  const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
 
-const toggleTheme = () => { setTheme((curr) => (curr === 'light' ? 'dark' : 'light'))
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme) 
+    return console.log('🤪🤪🤪🤪🤪')
+  }
 
     return(
-        <ThemeContext.Provider value={{theme, setTheme}}>
         <div>
-            <div className='light-mode'>
+            <div>
+                <i onClick={ switchTheme } class='fas fa-toggle-on'></i>
                 <p>Light</p>
             </div> 
             <div className='dark-mode'>
                 <p>Dark</p>
             </div>
         </div>
-        </ThemeContext.Provider>
     )};
-}
+
 export default DarkLight

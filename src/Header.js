@@ -4,18 +4,17 @@ import { createContext } from "react";
 import DarkLight from './component/DarkLight';
 
 
-const Header = () => {
+const Header = (props) => {
 
     return(
-        // <ThemeContext.Provider value={{theme, setTheme}}>
-        <header>
-            <div className="wrapper">
+        <header id={props.theme}>
+            <div className="wrapper" id={props.theme}>
                 <h1>Where is the world?</h1>
             </div>
+            <DarkLight />
         </header>
-        // </ThemeContext.Provider>
     )};
-// }
+
 
 
 export default Header

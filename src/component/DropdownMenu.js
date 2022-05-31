@@ -2,7 +2,7 @@
 
 
 
-function DropdownMenu(props){
+function DropdownMenu(){
 
 return(
 

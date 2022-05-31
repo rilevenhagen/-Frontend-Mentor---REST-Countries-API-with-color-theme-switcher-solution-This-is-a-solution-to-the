@@ -4,18 +4,19 @@ import Api from './component/Api';
 import Search from './component/Search';
 import DropdownMenu from './component/DropdownMenu';
 import DarkLight from './component/DarkLight';
-import useLocalStorage from 'use-local-storage'
 
-function App(props) {
+
+function App() {
+
+
 
 // display data on the DOM
 
-  return (
-    <div id={ props.them }>
+  return (<>
+  <div>
       <div className="App">
         <div className='header'>
           < Header />
-          < DarkLight />
         </div> 
         <div className='wrapper'>
           <div className='search-drop'>
@@ -28,9 +29,9 @@ function App(props) {
             <Api />
         </div>
       </div>
-
     </div>
-
+  </>
+    
   );
 }
 

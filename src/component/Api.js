@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState, useRef } from 'react';
 import DropdownMenu from './DropdownMenu';
-// import React, { Component } from 'react'
 // import Select from 'react-select'
 
 //get data from api================
@@ -37,9 +36,7 @@ return (
             </div>
             <div className='txtBox'>
                 <p className='country' key={flag.alpha2Code}>{flag.name}</p>
-
                 <p key={flag.numericCode}>Population: {flag.population}</p>
-
                 <p key={flag.cioc}>Region: {flag.region}</p>
                 <p key={flag.topLevelDomain}>Capital: {flag.capital}</p>
             </div>
