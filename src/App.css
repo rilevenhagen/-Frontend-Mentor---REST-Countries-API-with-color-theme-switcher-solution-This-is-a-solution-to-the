@@ -49,9 +49,10 @@ html {
   padding: 0;
   font-size: 112.5%;
   overflow-x: hidden;
+  
 }
 
-h1{
+header h1{
     font-size: 2rem;
     margin: 0 auto;
     color: rgb(6, 6, 6);
@@ -61,8 +62,8 @@ h1{
     font-weight: 800;
 }
 
-h2{
-     font-size: 1rem;
+header h2{
+    font-size: 1rem;
     margin: 0 auto;
     color: rgb(6, 6, 6);
     padding-bottom: 15px;
@@ -70,7 +71,20 @@ h2{
 
 }
 
-    
+.light-mode{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  margin-top: -50px;
+}
+
+.dark-mode{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  margin-top: -55px;
+}
+
 header{
     background-color: white;
     height: 10vh;
@@ -82,7 +96,7 @@ html{
 }
 
 /* =====dark mode====== */
-.header-dark{
+#dark .header-dark{
     background-color: hsl(209, 23%, 22%);
 }
 
