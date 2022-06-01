@@ -1,11 +1,8 @@
+
+import React from 'react';
 import { useEffect, useState, useRef } from 'react';
 import useLocalStorage from 'use-local-storage';
 
-
-// const teste = () =>{
-//     console.log('ddrf🤪🤪🤪🤪🤪dddd')
-//     return 
-// }
 
 const DarkLight = () => {
   const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
